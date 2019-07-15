@@ -1,7 +1,7 @@
 <template>
 <li v-on:click="handleClick">
    {{film.title}}
-  <button v-if="!favourites.includes(film)" v-on:click="addFavourite">FAVOURITE</button>
+  <button class="btn" v-if="!favourites.includes(film)" v-on:click="addFavourite">FAVOURITE</button>
 </li>
 </template>
 
@@ -23,4 +23,14 @@ export default {
 </script>
 
 <style>
+.btn {
+  border:0px none;
+  border-radius: 3%;
+  padding: 4px 6px;
+  color: purple;
+  cursor:pointer;
+  font-family: "Georgia", "Verdana", "Courier", Arial;
+  /* font-weight: bold; */
+  background-color: rgba(255, 255, 255, 0.01);
+}
 </style>

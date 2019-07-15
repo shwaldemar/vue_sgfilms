@@ -1,5 +1,5 @@
 <template>
-<div class="">
+<div class="fav">
   <films-list :favourites="favourites" :films='favourites'/>
   <film-detail/>
 </div>
@@ -20,4 +20,7 @@ export default {
 </script>
 
 <style>
+.fav {
+  height: 500px;
+}
 </style>
